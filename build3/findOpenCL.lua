@@ -1,4 +1,5 @@
 
+
 	function findOpenCL_clew()
 		return true;
 	end
