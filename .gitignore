@@ -30,3 +30,9 @@ CTestTestFile.cmake
 *.vcxproj
 *.vcxproj.filters
 *.sln
+*.db
+*.opendb
+*.db-shm
+*.db-wal
+/build3/vs2019
+/build3/vs2010
