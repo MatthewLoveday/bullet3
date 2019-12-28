@@ -10,13 +10,13 @@ print(string.format(" %d.%d.%d (%s)",
 if _ACTION == "vs2019" or _ACTION=="vs2010" then
 	buildoptions
 	{
-		-- Multithreaded compiling
-		"/MP",
 		-- Disable a few useless warnings
 		"/wd4244",
 		"/wd4267"
 	}
 end
+
+staticruntime "On"
 
 act = ""
 
