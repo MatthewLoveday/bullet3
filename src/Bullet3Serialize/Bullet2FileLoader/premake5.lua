@@ -1,17 +1,15 @@
-	project "Bullet3Dynamics"
-
-	language "C++"
-				
+	project "Bullet2FileLoader"
+		
 	kind "StaticLib"
-
-	includedirs {
-		".."
-	}		
 	
-    if os.is("Linux") then
+	includedirs {
+		"../../../src"
+	}
+	
+    if os.istarget("Linux") then
         buildoptions{"-fPIC"}
     end
-
+	 
 	files {
 		"**.cpp",
 		"**.h"
