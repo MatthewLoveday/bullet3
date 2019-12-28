@@ -1,0 +1,15 @@
+
+group "bullet physics"
+	--Include premake submodules
+	include "src/Bullet3Collision"
+	include "src/Bullet3Common"
+	include "src/Bullet3Geometry"
+	include "src/Bullet3Dynamics"
+	include "src/Bullet3OpenCL"
+	include "src/Bullet3Serialize"
+	include "src/BulletCollision"
+	include "src/BulletDynamics"
+	include "src/BulletInverseDynamics"
+	include "src/BulletSoftbody"
+	include "src/LinearMath"
+group ""
