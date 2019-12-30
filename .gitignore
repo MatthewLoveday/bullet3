@@ -41,4 +41,5 @@ CTestTestFile.cmake
 *.idb
 /src/**/*.lib
 src/**/*.obj
+src/**/*.txt
 *.log
