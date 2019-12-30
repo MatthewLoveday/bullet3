@@ -4,6 +4,8 @@
 				
 	kind "StaticLib"
 
+	SetPerProjectSettings()
+
 	includedirs {
 		".."
 	}		

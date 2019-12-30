@@ -9,6 +9,8 @@ function createProject(vendor)
 			
 		kind "StaticLib"
 		
+		SetPerProjectSettings()
+
         if os.istarget("Linux") then
             buildoptions{"-fPIC"}
         end

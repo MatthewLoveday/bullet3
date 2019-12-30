@@ -2,6 +2,8 @@
 		
 	kind "StaticLib"
 	
+	SetPerProjectSettings()
+
 	includedirs {
 		"../../../src"
 	}

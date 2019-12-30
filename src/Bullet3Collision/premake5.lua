@@ -4,6 +4,8 @@
 				
 	kind "StaticLib"
 		
+	SetPerProjectSettings()
+
 	includedirs {".."}
 
     if os.istarget("Linux") then

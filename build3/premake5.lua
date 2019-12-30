@@ -506,9 +506,28 @@ else
 	end
 end
 
+
+
 --------------------------------------------------------------------------------------------------------------------------------- END SETUP DEFAULT DIRECTORIES
 
+function SetPerProjectSettings()
+	staticruntime "on"
+end
 
+function SetPlatformSettingsPerProject()
+
+	filter "system:windows"
+		systemversion "latest"
+		cppdialect "C++17"
+		staticruntime "On"
+
+	filter "system:linux"
+		pic "On"
+		systemversion "latest"
+		cppdialect "C++17"
+		staticruntime "On"
+
+end
 
 
 function SetConfigurationSettingsPerProject()
@@ -540,20 +559,7 @@ function SetConfigurationSettingsPerProject()
 		runtime "release"
 end
 
-function SetPlatformSettingsPerProject()
 
-	filter "system:windows"
-		systemversion "latest"
-		cppdialect "C++17"
-		staticruntime "On"
-
-	filter "system:linux"
-		pic "On"
-		systemversion "latest"
-		cppdialect "C++17"
-		staticruntime "On"
-
-end
 
 
 --Going to be used across threads

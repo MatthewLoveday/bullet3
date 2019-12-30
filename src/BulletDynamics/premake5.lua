@@ -1,5 +1,7 @@
 	project "BulletDynamics"
-	kind "StaticLib"
+    kind "StaticLib"
+    SetPerProjectSettings()
+
 	includedirs {
 		"..",
 	}

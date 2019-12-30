@@ -3,6 +3,8 @@
 	language "C++"
 				
 	kind "StaticLib"
+
+	SetPerProjectSettings()
 		
 	includedirs {".."}
 	
