@@ -7,15 +7,6 @@ print(string.format(" %d.%d.%d (%s)",
 	osversion.majorversion, osversion.minorversion, osversion.revision,
 	osversion.description))
 
-if _ACTION == "vs2019" or _ACTION=="vs2010" then
-	buildoptions
-	{
-		-- Disable a few useless warnings
-		"/wd4244",
-		"/wd4267"
-	}
-end
-
 staticruntime "On"
 
 act = ""
@@ -512,6 +503,13 @@ end
 
 function SetPerProjectSettings()
 	staticruntime "on"
+	disablewarnings
+	{
+		"4244",
+		"4267"
+	}
+
+	warnings "off"
 end
 
 function SetPlatformSettingsPerProject()
