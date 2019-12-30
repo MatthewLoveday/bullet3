@@ -36,3 +36,9 @@ CTestTestFile.cmake
 *.db-wal
 /build3/vs2019
 /build3/vs2010
+*.tlog
+*.pdb
+*.idb
+/src/**/*.lib
+src/**/*.obj
+*.log
