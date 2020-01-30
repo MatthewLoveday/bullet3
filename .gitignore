@@ -43,3 +43,4 @@ CTestTestFile.cmake
 src/**/*.obj
 src/**/*.txt
 *.log
+*.user
